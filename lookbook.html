@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lookbook - Casual Streetwear</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;color:#111;line-height:1.5;padding:24px}
+    .container{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:260px 1fr;gap:20px;align-items:start}
+    .sidebar{background:#fff;border-radius:10px;padding:16px;box-shadow:0 6px 18px rgba(17,24,39,0.06)}
+    .brand{font-weight:700;font-size:18px;margin-bottom:12px}
+    .nav a{display:block;text-decoration:none;color:#222;padding:8px;border-radius:6px}
+    .nav a:hover{background:#eef3fb;color:#0b63a7}
+    .card{background:#fff;border-radius:10px;padding:14px;box-shadow:0 6px 18px rgba(17,24,39,0.04);margin-bottom:14px}
+    .main{padding:6px}
+    header .title{font-size:24px;margin-bottom:6px}
+    .lead{color:#555;margin-bottom:12px}
+    .hero{width:100%;height:260px;object-fit:cover;border-radius:8px;display:block;margin-bottom:12px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:6px}
+    footer{color:#666;font-size:14px;margin-top:18px;text-align:center}
+    ul,ol{margin-top:10px;margin-left:18px}
+    @media (max-width:900px){.container{grid-template-columns:1fr;padding:0 12px}.gallery{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:520px){.gallery{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="brand">Casual Streetwear</div>
+      <nav class="nav">
+        <a href="index.html">Domů</a>
+        <a href="history.html">Historie</a>
+        <a href="brands.html">Značky</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+
+      <div class="card" style="margin-top:12px">
+        <strong>Pododkazy</strong>
+        <ul style="margin-top:8px;padding-left:18px">
+          <li><a href="#casual">Casual set</a></li>
+          <li><a href="#smart">Smart-casual</a></li>
+          <li><a href="#retro">Retro sport</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="card">
+        <div class="title">Lookbook a outfity</div>
+        <p class="lead">Inspirace pro každodenní nošení — kombinace kousků z profilek značek.</p>
+      </header>
+
+      <section class="card" id="casual">
+        <h2>Casual set</h2>
+        <p>
+          Casual outfit začíná pevnými základy: kvalitní tričko, pohodlné džíny a pořádek v základních barvách. Vrstvení s mikinou nebo lehkou bundou dodá hloubku a praktickou teplotní regulaci. Tenisky nebo nízké boty udrží look nenucený a pohodlný. Doplňky jako čepice nebo batoh mohou nositeli dodat osobitý ráz. Celkově je důležité, aby kousky ladily proporčně a nebyly přetížené logy.
+        </p>
+
+        <p>
+          Doporučení pro začátečníky: investuj do dvou kvalitních základních kousků a postupně přidávej detaily. Barevná paleta by měla být kompatibilní — neutrální barvy se snáze kombinují. Experimentuj s texturami, například hladký materiál s jemným pleteným svetrem. Fotografuj své kombinace, abys viděl, co funguje. Následující galerie ukazuje tři příklady sestav.
+        </p>
+
+        <div class="gallery">
+          <img src="https://picsum.photos/seed/look1/400/300" alt="Look 1">
+          <img src="https://picsum.photos/seed/look2/400/300" alt="Look 2">
+          <img src="https://picsum.photos/seed/look3/400/300" alt="Look 3">
+        </div>
+      </section>
+
+      <section class="card" id="smart">
+        <h2>Smart-casual</h2>
+        <p>
+          Smart-casual kombinuje elegantnější prvky jako svetr nebo lehký kabát s pohodlnými džíny a čistými teniskami. Volba materiálů a střihů rozhoduje o výsledném dojmu — hladké struktury působí uhlazeněji. Barvy volte tlumené, případně doplňte jeden kousek s jemnou barvou pro oživení. Tento styl je ideální do práce nebo na večerní setkání s přáteli. Níže najdeš konkrétní položky k sestavení outfitu.
+        </p>
+
+        <p>
+          Tipy: při vrstvení začínej lehkými materiály a konči robustnější vrstvou, která drží tvar. Svetr může být nositelem barevného akcentu, zatímco kabát drží celkový tvar. Sázka na nadčasové kousky ti dává prostor měnit doplňky podle aktuální nálady. Smart-casual je o rovnováze mezi pohodlím a elegancí. Zkus si předem doma vyzkoušet kombinace před odchodem.
+        </p>
+      </section>
+
+      <section class="card" id="retro">
+        <h2>Retro sport</h2>
+        <p>
+          Retro sportovní styl se inspiruje archivy značek jako Fila a Diadora a klade důraz na barevné linky a tvar bot. Typické kousky zahrnují širší džíny, retro tenisky a sportovní bundy s výraznými pruhy. Tento styl je hravý a často pracuje s kontrastními detaily. Doplňky mohou být jednoduché — čepice, pásky nebo batohy s logem. Výsledkem je uvolněný, ale stylový vzhled pro volný čas.
+        </p>
+
+        <p>
+          Doporučené kombinace: Fila tenisky + džíny, diadora bunda + jednoduché tričko, svetr Lyle & Scott jako vrstva navrch. Vždy ber v potaz proporce a velikost — retro kousky mohou být někdy volnější. Pamatuj, že autentický retro vzhled vzniká kombinací originálních prvků a moderní péče o oblečení. Zkus mixovat starší a nové kousky pro zajímavý efekt.
+        </p>
+
+        <ol>
+          <li>Fila + široké džíny</li>
+          <li>Diadora bunda + moderní tenisky</

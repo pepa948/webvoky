@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Casual Streetwear - test</title>
+
+  <!-- VLOŽENÉ CSS (žádné externí soubory -> žádné chyby s názvy) -->
+  <style>
+    /* reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f4f6f8;
+      color:#111;
+      line-height:1.5;
+      padding:24px;
+    }
+
+    /* kontejner */
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns: 260px 1fr;
+      gap:20px;
+      align-items:start;
+    }
+
+    /* sidebar */
+    .sidebar{
+      background:#fff;
+      border-radius:10px;
+      padding:16px;
+      box-shadow:0 6px 18px rgba(17,24,39,0.06);
+    }
+    .brand{font-weight:700;font-size:18px;margin-bottom:12px}
+    .nav a{display:block;text-decoration:none;color:#222;padding:8px;border-radius:6px}
+    .nav a:hover{background:#eef3fb;color:#0b63a7}
+
+    .card{background:#fff;border-radius:10px;padding:14px;box-shadow:0 6px 18px rgba(17,24,39,0.04);margin-bottom:14px}
+
+    /* hlavní obsah */
+    .main{padding:6px;}
+    header .title{font-size:24px;margin-bottom:6px}
+    .lead{color:#555;margin-bottom:12px}
+
+    /* hero obrázek */
+    .hero{width:100%;height:260px;object-fit:cover;border-radius:8px;display:block;margin-bottom:12px}
+
+    /* galerie */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:6px}
+
+    /* iframe video */
+    .video-wrap{margin:12px 0}
+    .video-wrap iframe{width:100%;height:360px;border:0;border-radius:8px}
+
+    /* formulář */
+    label{display:block;margin-bottom:8px}
+    input[type="text"], input[type="email"], textarea{
+      width:100%;padding:8px;border:1px solid #d0d7de;border-radius:6px;margin-top:6px;
+    }
+    button{background:#0b63a7;color:#fff;padding:10px 14px;border:none;border-radius:6px;cursor:pointer}
+    button:hover{opacity:0.95}
+
+    footer{color:#666;font-size:14px;margin-top:18px;text-align:center}
+
+    /* responzivita */
+    @media (max-width:900px){
+      .container{grid-template-columns:1fr;padding:0 12px}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .gallery{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">Casual Streetwear</div>
+      <nav class="nav">
+        <a href="index.html">Domů</a>
+        <a href="history.html">Historie</a>
+        <a href="brands.html">Značky</a>
+        <a href="lookbook.html">Lookbook</a>
+        <a href="contact.html">Kontakt</a>
+      </nav>
+
+      <div class="card" style="margin-top:12px">
+        <strong>Pododkazy</strong>
+        <ul style="margin-top:8px;padding-left:18px">
+          <li><a href="brands.html">Top značky</a></li>
+          <li><a href="lookbook.html">Outfity</a></li>
+          <li><a href="#green">Green Street inspirace</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <header class="card">
+        <div class="title">Casual oblečení — Stone Island, C.P. Company a další</div>
+        <p class="lead">Projekt zaměřený na streetwear a značky inspirované filmem Green Street Hooligans. Níže jsou texty, galerie a video.</p>
+      </header>
+
+      <section class="card">
+        <img class="hero" src="https://picsum.photos/1200/600?random=1" alt="Hero - náhled">
+        <p>Casual móda kombinuje pohodlí a styl. Vychází často ze sportovního oblečení a utilitárních prvků, které se staly součástí městského stylu. Značky jako Stone Island nebo C.P. Company přinášejí technické materiály a promyšlené detaily. Filmová estetika, např. z Green Street Hooligans, ovlivnila vizuální vnímání mnoha kousků. Cílem stránky je představit značky a ukázat inspiraci pro každodenní outfity.</p>
+
+        <p>Outfity se staví postupně: základ (tričko), vrstva (mikina nebo polo), svrchní vrstva (bunda) a doplňky. Kvalitní materiály prodlužují životnost oblečení a zlepšují vzhled. Vhodné kombinace lze najít v lookbooku této stránky. Níže najdeš video s atmosférou a malou galerii. Pokud chceš, můžeš nahradit obrázky vlastními v lokální složce `images/`.</p>
+      </section>
+
+      <section class="card">
+        <h2 id="green">Multimédia (video + galerie)</h2>
+        <p>Film</p>
+
+        <div class="video-wrap">
+          <iframe src="https://youtu.be/39W7W9DxSC8?si=6abUtdDF82P5v46m" title="Video inspirace" allowfullscreen></iframe>
+        </div>
+
+        <h3>Galerie</h3>
+        <div class="gallery" aria-hidden="false">
+          <img src="https://picsum.photos/seed/si/400/300" alt="náhled 1">
+          <img src="https://picsum.photos/seed/fp/400/300" alt="náhled 2">
+          <img src="https://picsum.photos/seed/lc/400/300" alt="náhled 3">
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Kontakt</h2>
+        <p>Formulář zde slouží jako ukázka. Pokud ho chceš odesílat skutečně emailem, je potřeba serverové zpracování.</p>
+
+        <form action="#" method="post">
+          <label>Jméno
+            <input type="text" name="name" required>
+          </label>
+
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+
+          <label>Zpráva
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <button type="submit">Odeslat</button>
+        </form>
+      </section>
+
+      <footer>
+        © 2025 Casual Streetwear — testovací stránka
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>
